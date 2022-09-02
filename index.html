@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sahabat PNJ</title>
+    <link rel="icon" href="img/illustration/3d-fluency-cursor.png" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +15,7 @@
   <body>
     <nav id="nav-bar" class="bg-sky-600 fixed left-0 right-0 top-0 z-30 px-3">
       <div class="flex justify-between container mx-auto max-w-6xl py-3">
-        <a href="#header" class="font-rubik font-medium uppercase text-lg text-white">SPNJ</a>
+        <a href="#header" class="font-rubik font-medium uppercase text-lg text-white"><img src="img/logo/Logo-SPNJ.png" alt="logo spnj" class="w-32" /></a>
         <ul id="resp-nav" class="hidden sm:flex sm:static absolute right-0 top-10 bg-sky-600 sm:p-0 py-2 px-3 gap-10">
           <li class="mt-2 sm:mt-0"><a href="#about" class="font-rubik font-medium uppercase text-lg text-white">Sejarah</a></li>
           <li class="mt-2 sm:mt-0"><a href="#vision-n-mission" class="font-rubik font-medium uppercase text-lg text-white">Visi&Misi</a></li>
@@ -33,8 +34,8 @@
         <div class="max-w-2xl grow-0 mt-5">
           <h1 class="font-anton text-6xl sm:text-7xl lg:text-8xl xl:text-9xl text-white">SAHABAT PNJ</h1>
           <div class="flex flex-col my-3 lg:flex-row lg:my-5">
-            <p class="text-white font-kanit text-sm sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, assumenda!</p>
-            <p class="text-white font-kanit text-sm sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel praesentium odio aut quas accusantium consequuntur?</p>
+            <p class="text-white font-kanit text-sm sm:text-lg">Be creative in your own way</p>
+            <p class="text-white font-kanit text-sm sm:text-lg">SPNJ atau Sahabat PNJ sebagai salah satu Kelompok Studi Mahasiswa (KSM) yang ada di jurusan TIK</p>
           </div>
           <div class="flex gap-4">
             <a href="#about" class="font-rubik text-base px-2 py-1 sm:text-xl bg-white text-sky-500 sm:py-1.5 sm:px-4 shadow-md flex items-center gap-2 font-semibold w-fit border-white border-2 hover:-translate-y-0.5 transition"
@@ -48,7 +49,16 @@
             >
           </div>
         </div>
-        <div class="bg-white w-[85%] lg:w-1/2 h-96 grow-0"></div>
+        <div class="w-[85%] lg:w-1/2 h-80 grow-0 relative z-10">
+          <div class="absolute z-20 -top-5 -right-5 w-36 p-2 bg-white">
+            <img src="img/qrCode/qr_codelink.png" alt="" class="relative z-10" />
+            <div class="absolute z-0 bg-white top-0 bottom-0 right-0 left-0"></div>
+            <div class="absolute -z-10 bg-black top-2 -bottom-2 left-2 -right-2"></div>
+          </div>
+          <img src="img/illustration/space-smartphone-with-unread-messages-and-social-network-icons.png" class="absolute w-60 z-10 right-1/2 top-1/2 translate-x-1/2 -translate-y-1/2" alt="" />
+          <div class="absolute bg-white top-0 bottom-0 right-0 left-0 z-0 bg"></div>
+          <div class="absolute bg-black -z-10 top-3 left-3 -right-3 -bottom-3"></div>
+        </div>
       </section>
     </header>
     <main>
@@ -119,8 +129,8 @@
             <div class="absolute bg-slate-800 top-5 -bottom-5 -right-5 left-5 -z-10"></div>
           </div>
           <div class="lg:w-1/2 mt-10 lg:mt-0">
-            <p class="font-kanit text-lg sm:text-xl">Sahabat PNJ atau SPNJ merupakan salah satu Kelompok Studi Mahasiswa (KSM) yang ada di jurusan Teknik Informatika dan Komputer.</p>
-            <p class="font-kanit text-lg sm:text-xl mt-5">Sahabat PNJ awalnya berdiri pada tahun 2009 sebagai proker Departemen Pendidikan BEM TEKAD 2009-2010.</p>
+            <p class="font-kanit text-lg sm:text-2xl font-medium">Sahabat PNJ atau SPNJ merupakan salah satu Kelompok Studi Mahasiswa (KSM) yang ada di jurusan Teknik Informatika dan Komputer.</p>
+            <p class="font-kanit text-lg sm:text-2xl mt-5 font-medium">Sahabat PNJ awalnya berdiri pada tahun 2009 sebagai proker Departemen Pendidikan BEM TEKAD 2009-2010.</p>
           </div>
         </div>
       </section>
@@ -196,17 +206,15 @@
                   <div id="projects" class="relative z-30">
                     <div class="bg-white p-2 flex flex-wrap gap-2">
                       <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
-                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">NoteZ</h4>
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">Gunplaza</h4>
                         <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Heical Chandra S.</h5>
                         <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
-                        <img src="img/projects/android/heical-chandra_minproj2.jpg" alt="" class="w-full h-36" />
+                        <img src="img/projects/android/heical-chandra_project-thumbnail.jpg" alt="" class="w-full h-36" />
                         <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
                           <div class="p-5 bg-black w-fit relative">
-                            <h4 class="font-kanit text-xl project-name text-white">NoteZ</h4>
+                            <h4 class="font-kanit text-xl project-name text-white">Gunplaza</h4>
                             <h5 class="project-owner text-white font-kanit text-xl">Heical Chandra S.</h5>
-                            <video class="project-video h-[80vh]" controls>
-                              <source src="video/projects/android/heical-chandra_minproj2.mp4" />
-                            </video>
+                            <img src="img/projects/android/heical-chandra-project.png" class="h-[80vh]" alt="project-picture" />
                             <a class="close-pd absolute cursor-pointer top-4 right-4">
                               <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
                             </a>
@@ -232,17 +240,15 @@
                         </div>
                       </div>
                       <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
-                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">Project CV</h4>
-                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Marwah Nur S.</h5>
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">KalkulatorKu</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Rizky Adi</h5>
                         <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
-                        <img src="img/projects/android/marwah_minproj1.jpg" alt="" class="w-full h-36" />
+                        <img src="img/projects/android/rizky-adhi_project-thumbnail.jpg" alt="" class="w-full h-36" />
                         <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
                           <div class="p-5 bg-black w-fit relative">
-                            <h4 class="font-kanit text-xl project-name text-white">Project CV</h4>
-                            <h5 class="project-owner text-white font-kanit text-xl">Marwah Nur Shafira</h5>
-                            <video class="project-video h-[80vh]" controls>
-                              <source src="video/projects/android/marwah_minproj1.mp4" />
-                            </video>
+                            <h4 class="font-kanit text-xl project-name text-white">KalkulatorKu</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Rizky Adi</h5>
+                            <img src="img/projects/android/rizky-adhi_minproj.png" class="h-[80vh]" alt="" />
                             <a class="close-pd absolute cursor-pointer top-4 right-4">
                               <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
                             </a>
@@ -274,8 +280,10 @@
                 <div class="lg:w-1/2 p-2">
                   <h3 class="text-white font-kanit text-3xl font-semibold mb-3">Deskripsi</h3>
                   <div>
-                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, possimus ducimus iusto blanditiis distinctio libero!</p>
-                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, saepe!</p>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">
+                      Mempelajari pembuatan aplikasi mobile android dimulai dari instalasi, layouting, hingga lifecycle sehingga membuat aplikasi android yang lengkap
+                    </p>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Menggunakan platform android, bahasa pemograman kotlin, dan Android Studio sebagai lingkungan kerja</p>
                   </div>
                   <div class="mt-20 w-fit mx-auto">
                     <ul class="flex flex-wrap gap-4">
@@ -318,7 +326,7 @@
                           <div class="p-5 bg-black w-fit relative">
                             <h4 class="font-kanit text-xl project-name text-white">Fav Song List</h4>
                             <h5 class="project-owner text-white font-kanit text-xl">Vidi Septri Argalus</h5>
-                            <video class="project-video w-[80vw]">
+                            <video class="project-video w-[80vw]" controls>
                               <source src="video/projects/website/vidi_minproj1.mp4" />
                             </video>
                             <a class="close-pd absolute cursor-pointer top-4 right-4">
@@ -370,8 +378,8 @@
                 <div class="lg:w-1/2 p-2">
                   <h3 class="text-white font-kanit text-3xl font-semibold mb-3">Deskripsi</h3>
                   <div>
-                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, possimus ducimus iusto blanditiis distinctio libero!</p>
-                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, saepe!</p>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Mempelajari mengenai pengembangan website secara front end dan back end. Memahami konsep struktur dan bagaimana cara pembuatan website.</p>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Bahasa yang digunakan adalah HTML, CSS, Javascript, dan PHP</p>
                   </div>
                   <div class="mt-20 w-fit mx-auto">
                     <ul class="flex flex-wrap gap-4">
@@ -467,8 +475,8 @@
                 <div class="lg:w-1/2 p-2">
                   <h3 class="text-white font-kanit text-3xl font-semibold mb-3">Deskripsi</h3>
                   <div>
-                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, possimus ducimus iusto blanditiis distinctio libero!</p>
-                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, saepe!</p>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Mempelajari bagaimana caranya membuat Motion pada sebuah Object dan pembuatan video yang menerapkan Motion Graphic</p>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Tools atau Software yang digunakan adalah Adobe Aftereffects dan Adobe Illustrator</p>
                   </div>
                   <div class="mt-20 w-fit mx-auto">
                     <ul class="flex flex-wrap gap-4">
@@ -483,7 +491,13 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-sky-500">
+      <div class="container max-w-6xl mx-auto py-4 relative">
+        <div class="text-xl text-white font-kanit">&copy;Copyright 2022 - Sahabat Politeknik Negeri Jakarta</div>
+        <div id="illustration-source" class="text-white font-kanit text-xl">Illustration by <a href="https://icons8.com/illustrations/author/N3YOxdn12Kox">Marina Mogulska</a> from <a href="https://icons8.com/illustrations">Ouch!</a></div>
+        <a href="https://discord.gg/ZFEWaCARQ8" target="_blank" class="absolute right-0 top-1/2 -translate-y-1/2"><img src="img/logo/discord.svg" class="w-16" alt="" /></a>
+      </div>
+    </footer>
     <script src="js/carousel.js"></script>
     <script src="js/responsiveNav.js"></script>
     <script src="js/openProject.js"></script>
