@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav id="nav-bar" class="bg-sky-600 fixed left-0 right-0 top-0 z-30 px-3">
+      <div class="flex justify-between container mx-auto max-w-6xl py-3">
+        <a href="#header" class="font-rubik font-medium uppercase text-lg text-white">SPNJ</a>
+        <ul id="resp-nav" class="hidden sm:flex sm:static absolute right-0 top-10 bg-sky-600 sm:p-0 py-2 px-3 gap-10">
+          <li class="mt-2 sm:mt-0"><a href="#about" class="font-rubik font-medium uppercase text-lg text-white">Sejarah</a></li>
+          <li class="mt-2 sm:mt-0"><a href="#vision-n-mission" class="font-rubik font-medium uppercase text-lg text-white">Visi&Misi</a></li>
+          <li class="mt-2 sm:mt-0"><a href="#team" class="font-rubik font-medium uppercase text-lg text-white">Pengurus</a></li>
+          <li class="mt-2 sm:mt-0"><a href="#division" class="font-rubik font-medium uppercase text-lg text-white">Divisi</a></li>
+        </ul>
+        <a id="burger-btn" class="cursor-pointer block w-10 group sm:hidden">
+          <div class="h-1 bg-white group-hover:w-1/2"></div>
+          <div class="h-1 bg-white my-2 group-hover:w-3/4"></div>
+          <div class="h-1 bg-white"></div>
+        </a>
+      </div>
+    </nav>
+    <header id="header" class="bg-sky-600 h-screen flex items-center px-3 py-6">
+      <section id="hero-section" class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center lg:items-start">
+        <div class="max-w-2xl grow-0 mt-5">
+          <h1 class="font-anton text-6xl sm:text-7xl lg:text-8xl xl:text-9xl text-white">SAHABAT PNJ</h1>
+          <div class="flex flex-col my-3 lg:flex-row lg:my-5">
+            <p class="text-white font-kanit text-sm sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, assumenda!</p>
+            <p class="text-white font-kanit text-sm sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel praesentium odio aut quas accusantium consequuntur?</p>
+          </div>
+          <div class="flex gap-4">
+            <a href="#about" class="font-rubik text-base px-2 py-1 sm:text-xl bg-white text-sky-500 sm:py-1.5 sm:px-4 shadow-md flex items-center gap-2 font-semibold w-fit border-white border-2 hover:-translate-y-0.5 transition"
+              >Cari tahu <img src="img/logo/next-page-arrow.svg" class="inline w-7" alt=""
+            /></a>
+            <a
+              href="https://www.instagram.com/sahabat_pnj/"
+              target="_blank"
+              class="font-rubik text-base px-2 py-1 sm:text-xl border-white text-white border-2 sm:px-4 sm:py-1.5 shadow-md block font-semibold w-fit relative overflow-hidden before:absolute before:content-[''] before:bg-white before:top-0 before:bottom-0 before:left-1/2 before:right-1/2 hover:before:left-0 hover:before:right-0 transition hover:text-sky-500 z-0 before:-z-10 before:transition-all"
+              >Instagram kami</a
+            >
+          </div>
+        </div>
+        <div class="bg-white w-[85%] lg:w-1/2 h-96 grow-0"></div>
+      </section>
+    </header>
+    <main>
+      <section id="about" class="h-screen container max-w-6xl mx-auto py-6 flex flex-col justify-center px-3">
+        <h2 class="font-anton text-sky-500 text-5xl">TENTANG KAMI</h2>
+        <div class="mt-20 flex flex-col lg:flex-row justify-between items-center z-10">
+          <div class="bg-sky-500 relative w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem]">
+            <div class="h-[50vw] max-w-[30rem] max-h-[18rem] w-[80vw] bg-slate-200 overflow-hidden scroll-smooth transition duration-300 absolute -left-5 -top-10">
+              <ul class="flex w-[600%]">
+                <li id="first" class="slide-documentation transition-all duration-1000 first-slide-documentation w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem] bg-red-500">
+                  <img class="w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem]" src="img/dokumentasi/minproj1end.jpg" alt="dokumentasi" />
+                </li>
+                <li class="slide-documentation transition-all duration-1000 w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem] bg-pink-500">
+                  <img class="w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem]" src="img/dokumentasi/minproj1andro.jpg" alt="dokumentasi" />
+                </li>
+                <li class="slide-documentation transition-all duration-1000 w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem] bg-orange-500">
+                  <img class="w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem]" src="img/dokumentasi/pengurus.jpg" alt="dokumentasi" />
+                </li>
+                <li class="slide-documentation transition-all duration-1000 w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem] bg-slate-500">
+                  <img class="w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem]" src="img/dokumentasi/graduation2022.jpg" alt="dokumentasi" />
+                </li>
+                <li class="slide-documentation transition-all duration-1000 w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem] bg-blue-500">
+                  <img class="w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem]" src="img/dokumentasi/minproj1supervising.jpg" alt="dokumentasi" />
+                </li>
+                <li class="slide-documentation transition-all duration-1000 w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem] bg-blue-500">
+                  <img class="w-[80vw] h-[50vw] max-w-[30rem] max-h-[18rem]" src="img/dokumentasi/minproj1webgraph.jpg" alt="dokumentasi" />
+                </li>
+              </ul>
+            </div>
+            <div class="absolute bottom-2.5 right-10">
+              <label for="radio1">
+                <input id="radio1" type="radio" name="slide-radio" class="slide-radio hidden peer" checked />
+                <div
+                  class="inline-block radio-style rounded-full before:rounded-full w-4 h-4 bg-slate-800 relative before:absolute before:opacity-0 before:bg-white cursor-pointer before:top-1/4 before:bottom-1/4 before:left-1/4 before:right-1/4 peer-checked:before:opacity-100 before:transition-all"
+                ></div>
+              </label>
+              <label for="radio2">
+                <input id="radio2" type="radio" name="slide-radio" class="slide-radio hidden peer" />
+                <div
+                  class="inline-block radio-style rounded-full before:rounded-full w-4 h-4 bg-slate-800 relative before:absolute before:opacity-0 before:bg-white cursor-pointer before:top-1/4 before:bottom-1/4 before:left-1/4 before:right-1/4 peer-checked:before:opacity-100 before:transition-all"
+                ></div>
+              </label>
+              <label for="radio3">
+                <input id="radio3" type="radio" name="slide-radio" class="slide-radio hidden peer" />
+                <div
+                  class="inline-block radio-style rounded-full before:rounded-full w-4 h-4 bg-slate-800 relative before:absolute before:opacity-0 before:bg-white cursor-pointer before:top-1/4 before:bottom-1/4 before:left-1/4 before:right-1/4 peer-checked:before:opacity-100 before:transition-all"
+                ></div>
+              </label>
+              <label for="radio4">
+                <input id="radio4" type="radio" name="slide-radio" class="slide-radio hidden peer" />
+                <div
+                  class="inline-block radio-style rounded-full before:rounded-full w-4 h-4 bg-slate-800 relative before:absolute before:opacity-0 before:bg-white cursor-pointer before:top-1/4 before:bottom-1/4 before:left-1/4 before:right-1/4 peer-checked:before:opacity-100 before:transition-all"
+                ></div>
+              </label>
+              <label for="radio5">
+                <input id="radio5" type="radio" name="slide-radio" class="slide-radio hidden peer" />
+                <div
+                  class="inline-block radio-style rounded-full before:rounded-full w-4 h-4 bg-slate-800 relative before:absolute before:opacity-0 before:bg-white cursor-pointer before:top-1/4 before:bottom-1/4 before:left-1/4 before:right-1/4 peer-checked:before:opacity-100 before:transition-all"
+                ></div>
+              </label>
+              <label for="radio6">
+                <input id="radio6" type="radio" name="slide-radio" class="slide-radio hidden peer" />
+                <div
+                  class="inline-block radio-style rounded-full before:rounded-full w-4 h-4 bg-slate-800 relative before:absolute before:opacity-0 before:bg-white cursor-pointer before:top-1/4 before:bottom-1/4 before:left-1/4 before:right-1/4 peer-checked:before:opacity-100 before:transition-all"
+                ></div>
+              </label>
+            </div>
+            <div class="absolute bg-slate-800 top-5 -bottom-5 -right-5 left-5 -z-10"></div>
+          </div>
+          <div class="lg:w-1/2 mt-10 lg:mt-0">
+            <p class="font-kanit text-lg sm:text-xl">Sahabat PNJ atau SPNJ merupakan salah satu Kelompok Studi Mahasiswa (KSM) yang ada di jurusan Teknik Informatika dan Komputer.</p>
+            <p class="font-kanit text-lg sm:text-xl mt-5">Sahabat PNJ awalnya berdiri pada tahun 2009 sebagai proker Departemen Pendidikan BEM TEKAD 2009-2010.</p>
+          </div>
+        </div>
+      </section>
+      <section id="vision-n-mission" class="sm:h-screen container max-w-6xl mx-auto flex flex-col justify-center px-3 py-6">
+        <h2 class="font-anton text-sky-500 text-5xl">VISI DAN MISI</h2>
+        <div class="p-5 relative z-10 mt-10">
+          <h3 class="bg-black text-white text-xl sm:text-2xl py-0.5 px-2 font-kanit w-fit">Visi</h3>
+          <p id="vision" class="font-kanit text-white text-base sm:text-xl mt-3">
+            Meningkatkan Kinerja Sahabat PNJ menjadi lebih baik dari tahun-tahun sebelumnya dan tercapainya kinerja maksimal serta membangun dan membangkitkan semangat mahasiswa TIK khususnya anggota KSM Sahabat PNJ untuk menjadi mahasiswa
+            yang cerdas, kreatif, inovatif dan juga lebih kompak menjalin kerjasama.
+          </p>
+          <h3 class="bg-black text-white text-xl sm:text-2xl py-0.5 px-2 font-kanit w-fit mt-6">Misi</h3>
+          <ul id="mission" class="font-kanit text-white text-base sm:text-xl list-decimal pl-5 mt-3">
+            <li><p>Meningkatkan atau mengembangkan kegiatan kegiatan dalam KSM Sahabat PNJ, dalam hal ini yaitu tutor sebaya.</p></li>
+            <li><p>Meningkatkan keterampilan dan kemandirian dan juga mengembangkan kualitas anggota KSM Sahabat PNJ.</p></li>
+            <li><p>Jika ada acara-acara atau perlombaan, kita merealisasikannya kepada anggota KSM Sahabat PNJ agar dapat bersaing dan berusaha ingin lebih maju.</p></li>
+          </ul>
+          <div class="absolute top-0 bottom-0 left-0 right-0 bg-sky-500 shadow-xl -z-10"></div>
+          <div class="absolute top-2 xl:top-5 -bottom-2 xl:-bottom-5 -right-2 xl:-right-5 left-2 xl:left-5 bg-white shadow-xl border-4 border-black -z-20"></div>
+          <div class="absolute top-3 xl:top-10 -bottom-3 xl:-bottom-10 -right-3 xl:-right-10 left-3 xl:left-10 bg-slate-800 shadow-xl -z-30"></div>
+        </div>
+      </section>
+      <section id="team" class="h-screen container max-w-6xl mx-auto py-10 flex flex-col justify-center px-3">
+        <h2 class="font-anton text-sky-500 text-5xl mx-auto w-fit">TIM PENGURUS</h2>
+        <div id="" class="mt-20 mx-auto w-fit">
+          <ul id="slides" class="h-64 sm:h-96 flex sm:gap-4 mx-auto">
+            <li class="slide">
+              <img src="img/pengurus/bintang-fajar-julio.png" class="mx-auto w-16 sm:w-36 opacity-50" alt="" />
+              <h4 class="nama-pengurus font-kanit text-center text-sm sm:text-lg font-medium mt-3 opacity-50 max-w-[13rem] r">Bintang Fajar Julio</h4>
+              <h3 class="jabatan-pengurus font-kanit mx-auto text-sm sm:text-lg py-0.5 px-1 sm:px-1.5 w-fit bg-sky-500 text-white opacity-50 max-w-[13rem] text-center">Humas SPNJ</h3>
+            </li>
+            <li class="slide">
+              <img src="img/pengurus/rizky-adi.png" alt="" class="mx-auto w-24 sm:w-44" />
+              <h4 class="nama-pengurus font-kanit text-center text-lg sm:text-2xl font-medium mt-4 max-w-[13rem]">Rizky Adi</h4>
+              <h3 class="jabatan-pengurus font-kanit mx-auto text-lg sm:text-2xl py-0.5 sm:py-1 px-1.5 sm:px-3 w-fit bg-sky-500 text-white max-w-[13rem] text-center">Ketua SPNJ</h3>
+            </li>
+            <li class="slide">
+              <img src="img/pengurus/gilang-adhi-perkasa.png" alt="" class="mx-auto w-16 sm:w-36 opacity-50" />
+              <h4 class="nama-pengurus font-kanit text-center text-sm sm:text-lg font-medium mt-3 opacity-50 max-w-[13rem]">Gilang Adhi Perkasa</h4>
+              <h3 class="jabatan-pengurus font-kanit mx-auto text-sm sm:text-lg py-0.5 px-1 sm:px-1.5 w-fit bg-sky-500 text-white opacity-50 max-w-[13rem] text-center">Wakil Ketua SPNJ</h3>
+            </li>
+          </ul>
+          <div class="flex w-fit mx-auto">
+            <div>
+              <a id="prev-button" class="cursor-pointer"><img src="img/logo/prev-arrow.svg" alt="prev" /></a>
+            </div>
+            <div>
+              <a id="next-button" class="cursor-pointer"><img src="img/logo/next-arrow.svg" alt="next" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="division" class="h-screen container max-w-6xl mx-auto px-3">
+        <h2 class="font-anton text-5xl text-sky-500 mb-5">DIVISI</h2>
+        <div class="bg-sky-500 p-5">
+          <div class="mx-auto flex justify-center items-center relative z-20">
+            <a id="prev-division" class="inline cursor-pointer"><img class="w-14" src="img/logo/prev-division.svg" alt="" /></a>
+            <div class="w-32 h-9 overflow-hidden bg-white rounded-full">
+              <div class="h-[300%] w-32">
+                <div class="division-name font-kanit text-sky-500 px-4 h-9 flex items-center w-32 justify-center transition-all duration-300"><span class="text-2xl font-medium">Android</span></div>
+                <div class="division-name font-kanit text-sky-500 px-4 h-9 flex items-center w-32 justify-center transition-all duration-300"><span class="text-2xl font-medium">Website</span></div>
+                <div class="division-name font-kanit text-sky-500 px-4 h-9 flex items-center w-32 justify-center transition-all duration-300"><span class="text-2xl font-medium">Mograph</span></div>
+              </div>
+            </div>
+            <a id="next-division" class="inline cursor-pointer"><img class="w-14" src="img/logo/next-division.svg" alt="" /></a>
+          </div>
+
+          <div class="mt-5 h-[83rem] sm:h-[55rem] lg:h-[34rem] overflow-hidden">
+            <div class="h-[300%]">
+              <div id="android" class="flex flex-col-reverse lg:flex-row-reverse h-[83rem] sm:h-[55rem] lg:h-[34rem] transition-all duration-500">
+                <div class="lg:w-1/2 mt-10 lg:mt-0">
+                  <h3 class="text-white font-kanit text-3xl font-semibold mb-3 text-right">Projects</h3>
+                  <div id="projects" class="relative z-30">
+                    <div class="bg-white p-2 flex flex-wrap gap-2">
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">NoteZ</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Heical Chandra S.</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/android/heical-chandra_minproj2.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">NoteZ</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Heical Chandra S.</h5>
+                            <video class="project-video h-[80vh]" controls>
+                              <source src="video/projects/android/heical-chandra_minproj2.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">Project CV</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">M. Haikal Al R.</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/android/haikal-rasyid_minproj1.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">M. Haikal Al R.</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Project CV</h5>
+                            <video class="project-video h-[80vh]" controls>
+                              <source src="video/projects/android/haikal-rasyid_minproj1.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">Project CV</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Marwah Nur S.</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/android/marwah_minproj1.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">Project CV</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Marwah Nur Shafira</h5>
+                            <video class="project-video h-[80vh]" controls>
+                              <source src="video/projects/android/marwah_minproj1.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">Notelt</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Bayu Nugroho</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/android/bayu-nugroho_minproj2.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">Notelt</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Bayu Nugroho</h5>
+                            <video class="project-video h-[80vh]" controls>
+                              <source src="video/projects/android/bayu-nugroho_minproj2.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="absolute bg-black -z-30 top-2 -bottom-2 -left-2 right-2 hidden lg:block"></div>
+                  </div>
+                </div>
+                <div class="lg:w-1/2 p-2">
+                  <h3 class="text-white font-kanit text-3xl font-semibold mb-3">Deskripsi</h3>
+                  <div>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, possimus ducimus iusto blanditiis distinctio libero!</p>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, saepe!</p>
+                  </div>
+                  <div class="mt-20 w-fit mx-auto">
+                    <ul class="flex flex-wrap gap-4">
+                      <li><img src="img/logo/android.svg" class="w-10 sm:w-24" alt="" /></li>
+                      <li><img src="img/logo/kotlin.svg" class="w-10 sm:w-24" alt="" /></li>
+                      <li><img src="img/logo/android-studio.svg" class="w-10 sm:w-24" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="website" class="flex flex-col-reverse lg:flex-row-reverse h-[83rem] sm:h-[55rem] lg:h-[34rem] transition-all duration-500">
+                <div class="lg:w-1/2 mt-10 lg:mt-0">
+                  <h3 class="text-white font-kanit text-3xl font-semibold mb-3 text-right">Projects</h3>
+                  <div id="projects" class="relative z-30">
+                    <div class="bg-white p-2 flex flex-wrap gap-2">
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">E-Commerce</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Lisna Agustin</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/website/lisna_minproj2.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">E-Commerce</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Lisna Agustin</h5>
+                            <video class="project-video w-[80vw]" controls>
+                              <source src="video/projects/website/lisna_minrpoj2.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">Fav Song List</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Vidi Septri Argalus</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/website/vidi_minproj1.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">Fav Song List</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Vidi Septri Argalus</h5>
+                            <video class="project-video w-[80vw]">
+                              <source src="video/projects/website/vidi_minproj1.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">About me</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Andra Rizky</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/website/andra_minproj1.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">About me</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Andra Rizky</h5>
+                            <video class="project-video w-[80vw]" controls>
+                              <source src="video/projects/website/andra_minproj1.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">E-Commerce</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Nibras Alyassar</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/website/nibras_minproj2.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">E-Commerce</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Nibras Alyassar</h5>
+                            <video class="project-video w-[75vw]" controls>
+                              <source src="video/projects/website/nibras_minproj2.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="absolute bg-black -z-30 top-2 -bottom-2 -left-2 right-2 hidden lg:block"></div>
+                  </div>
+                </div>
+                <div class="lg:w-1/2 p-2">
+                  <h3 class="text-white font-kanit text-3xl font-semibold mb-3">Deskripsi</h3>
+                  <div>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, possimus ducimus iusto blanditiis distinctio libero!</p>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, saepe!</p>
+                  </div>
+                  <div class="mt-20 w-fit mx-auto">
+                    <ul class="flex flex-wrap gap-4">
+                      <li><img src="img/logo/html.svg" class="w-10 sm:w-24" alt="" /></li>
+                      <li><img src="img/logo/css.svg" class="w-10 sm:w-24" alt="" /></li>
+                      <li><img src="img/logo/javascript.svg" class="w-10 sm:w-24" alt="" /></li>
+                      <li><img src="img/logo/php.svg" class="w-10 sm:w-24" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="mograph" class="flex flex-col-reverse lg:flex-row-reverse h-[83rem] sm:h-[55rem] lg:h-[34rem] transition-all duration-500">
+                <div class="lg:w-1/2 mt-10 lg:mt-0">
+                  <h3 class="text-white font-kanit text-3xl font-semibold mb-3 text-right">Projects</h3>
+                  <div id="projects" class="relative z-30">
+                    <div class="bg-white p-2 flex flex-wrap gap-2">
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">Newyork Landscape</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Khairunnisa</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/mograph/khairunnisa_minproj2.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">Newyork Landscape</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Khairunnisa</h5>
+                            <video class="project-video w-[80vw]" controls>
+                              <source src="video/projects/mograph/khairunnisa_minproj2.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">Object Motion</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Rafindra Librant</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/mograph/rafindra-librant_minproj1.jpg" alt="thumbnail" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">Object Motion</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Rafindra Librant</h5>
+                            <video class="project-video w-[80vw]" controls>
+                              <source src="video/projects/mograph/rafindra-librant_minproj1.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">Object Motion</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Faiz Firdaus</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/mograph/faiz-firdaus_minproj1.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">Object Motion</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Faiz Firdaus</h5>
+                            <video class="project-video w-[80vw]" controls>
+                              <source src="video/projects/mograph/faiz-firdaus_minproj1.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project h-52 flex items-center bg-black w-full sm:w-[49%] relative">
+                        <h4 class="project-name absolute text-white font-kanit top-1 left-2">Liverpool Landscape</h4>
+                        <h5 class="project-owner absolute text-white font-kanit left-2 bottom-1">Fajar Mustofa</h5>
+                        <a class="open-project-btn cursor-pointer block text-white font-kanit absolute right-2 bottom-1 underline z-10">detail</a>
+                        <img src="img/projects/mograph/fajar-mustofa_minproj2.jpg" alt="" class="w-full h-36" />
+                        <div class="project-detail bg-black/50 fixed top-0 bottom-0 left-0 right-0 items-center justify-center z-50 hidden">
+                          <div class="p-5 bg-black w-fit relative">
+                            <h4 class="font-kanit text-xl project-name text-white">Liverpool Landscape</h4>
+                            <h5 class="project-owner text-white font-kanit text-xl">Fajar Mustofa</h5>
+                            <video class="project-video w-[80vw]" controls>
+                              <source src="video/projects/mograph/fajar-mustofa_minproj2.mp4" />
+                            </video>
+                            <a class="close-pd absolute cursor-pointer top-4 right-4">
+                              <img src="img/logo/close-btn.svg" alt="close button" class="w-8" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="absolute bg-black -z-30 top-2 -bottom-2 -left-2 right-2 hidden lg:block"></div>
+                  </div>
+                </div>
+                <div class="lg:w-1/2 p-2">
+                  <h3 class="text-white font-kanit text-3xl font-semibold mb-3">Deskripsi</h3>
+                  <div>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, possimus ducimus iusto blanditiis distinctio libero!</p>
+                    <p class="division-description font-kanit text-base lg:text-xl text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, saepe!</p>
+                  </div>
+                  <div class="mt-20 w-fit mx-auto">
+                    <ul class="flex flex-wrap gap-4">
+                      <li><img src="img/logo/adobe-aftereffects.svg" class="w-10 sm:w-24" alt="" /></li>
+                      <li><img src="img/logo/adobe-illustrator.svg" class="w-10 sm:w-24" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/carousel.js"></script>
+    <script src="js/responsiveNav.js"></script>
+    <script src="js/openProject.js"></script>
+  </body>
+</html>
